@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  cursor: url("hammer.png"),auto;
   text-align: center;
   font-size: 10rem;
   line-height: 1;
