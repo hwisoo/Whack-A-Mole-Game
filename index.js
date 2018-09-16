@@ -19,7 +19,7 @@ function randomHole(holes) {
   return hole;
 }
 function peep() {
-  const time = randomTime(200, 1000);
+  const time = randomTime(250, 1200);
   const hole = randomHole(holes);
   hole.classList.add('up');
   setTimeout(() => {
@@ -32,7 +32,7 @@ function startGame() {
   timeUp = false;
   score = 0;
   peep();
-  setTimeout(() => timeUp = true, 10000);
+  setTimeout(() => timeUp = true, 15000);
 }
 function bonk(e) {
   if(!e.isTrusted) return; // cheater!
